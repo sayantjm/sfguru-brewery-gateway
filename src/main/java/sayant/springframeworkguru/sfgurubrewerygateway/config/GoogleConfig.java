@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Profile;
 /**
  * Created by sayantjm on 21/2/21
  */
-@Profile("google")
-@Configuration
+//@Profile("google")
+//@Configuration
 public class GoogleConfig {
 
     @Bean
