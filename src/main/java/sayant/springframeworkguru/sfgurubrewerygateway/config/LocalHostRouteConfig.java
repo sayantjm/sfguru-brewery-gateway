@@ -17,6 +17,8 @@ public class LocalHostRouteConfig {
                 .route(r -> r.path("/api/v1/beer*", "/api/v1/beer/*", "/api/v1/beer/Upc/*")
                         //.filters(f -> f.rewritePath("/googlesearch(?<segment>/?.*)", "/${segment}"))
                         .uri("http://localhost:8080"))
+                .route(r -> r.path("/api/v1/customers*")
+                        .uri("http://localhost:8081"))
                 .build();
     }
 }
